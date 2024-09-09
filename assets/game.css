@@ -1,0 +1,366 @@
+@font-face {
+    font-family: 'rajdhani';
+    src: url(../pelicule/Rajdhani-Medium.ttf);
+    }
+    :root {
+        --yellow-color: #ffff00;
+        --yellow-ligth: #f8f184;
+        --blue-color: #19587d;
+        --white-color: #461919;
+        --gradient-white: #EDDEBF;
+        --gradient-red: #890008;
+        --black-color: #000;
+    
+    }
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    h1 {
+    font-family: 'rajdhani';
+    font-size: 36px;
+    font-weight: 400%;
+    }
+    button {
+        font-family: 'rajdhani';
+        font-size: 20px;
+        font-weight: 400%;
+    }
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    html, body {
+        height: 100%; /* Assure que le body et le html ont une hauteur de 100% du viewport */
+    }
+    body {
+        overflow-x: hidden; /* Empêche le débordement horizontal */
+    }
+    
+    body {
+        min-height: 100vh; /* Assure que le body a au moins la hauteur du viewport */
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        font-family: space grotesk;
+        font-weight: 300;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 100px;
+
+    }
+    @media (max-width: 768px) {
+        body {
+            font-size: 14px; /* Réduit la taille de la police */
+            padding-bottom: 1000px; /* Réduit le padding */
+        }
+    }
+        
+    @media (max-width: 480px) {
+        body {
+            font-size: 12px; /* Réduit encore la taille de la police */
+            padding-bottom: 1000px; /* Réduit davantage le padding */
+        }
+    }
+    /* la partie scroll*/
+    .scroll {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        right: 80px;
+        top: 230px;
+    }
+    .scroll .social{
+        margin-top: 15;
+    }
+    .right {
+        right: -85%;
+    
+    }
+    /* design du grand titre et de la fleche*/
+    #hero .mari{
+        position: fixed; /* Fixe l'élément par rapport à la fenêtre du navigateur */
+        top: 200px; /* Positionne l'élément à 20 pixels du haut de la fenêtre */
+        right: 20px; /* Positionne l'élément à 20 pixels du bord droit de la fenêtre */
+        z-index: 1000; /* Assure que l'élément reste au-dessus des autres éléments */
+}
+    #hero .ts{
+        font-size: 20px;
+        padding: 300px 200px; /* Déplace le titre vers l'intérieur */
+        margin: 50px 0;
+        outline: none;
+    }
+    
+    #hero .flèche{
+        display: block;
+        margin: 50px auto;
+        padding-top: 50px;
+    } 
+    #hero {
+        background-image: url(Batgame_1.png);
+        height: 800px;
+        background-position: top center;
+        background-repeat: repeat;
+        background-size: cover;
+        display: block; /* Affiche l'image en tant que bloc pour permettre la gestion de l'espace */
+            margin-bottom: 20px; /* Ajoute de l'espace en bas de l'image pour que la flèche ne touche pas l'image */
+        
+        
+    }
+        /* design de la partie batman chevalier*/
+        #container-1{
+            display: flexbox;
+            padding-top: 100px;
+        }
+        .sal-1 {
+            text-align: center;
+            
+        
+        }
+        #container-1.tete-1{
+            text-align: center;
+            justify-content: center; /* Centre horizontalement */
+            align-items: center; /* Centre verticalement */
+            padding-top: 50px;
+        }
+        #container-1 .sedou-1{
+            padding-top: 20px;
+        
+        }
+        .sedou-1 {
+            display: flex;
+            justify-content: center;
+        }
+        #container-1 .center-1 {
+            display: flex;
+            justify-content: center; /* Centre le bouton horizontalement */
+            padding: 100px 100px; /* Espace au-dessus du bouton */
+        }
+        #container-1 .btn-1{
+            display: inline-block;
+            padding: 16px 35px;
+            text-decoration: none;
+            color: var(--gradient-white); /* Couleur du texte */
+            background: linear-gradient(to right, #404040, #FFA500);
+            border: none; /* Bordure autour du bouton */
+            border-radius: none; /* Coins arrondis */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
+                
+            }
+            
+    
+
+#section1 .up-bar {
+    border-top: 1px #727272 solid;
+    position: absolute;
+    top: 132px;
+    width: 83%;
+    left: 102px;
+    
+}
+ #section1 .left-bar {
+    border-left: 1px #727272 solid;
+    position: absolute;
+    height: 8055%;
+    width: 102px;
+    left: 102px;
+}
+ #section1 .right-bar {
+    border-right: 1px #727272 solid;
+    position: absolute;
+    height: 8055%;
+    right: 125px;
+}
+.down-bar {
+    border-top: 10px solid #727272;
+    width: 100%;
+    background-color: #ffffff00;
+    margin-top: 20px; /* Ajuste cette valeur en fonction de la hauteur du footer pour éviter le chevauchement */
+}
+
+/* disegn de la naviation*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Affiche les listes côte à côte */  
+}
+li {
+    display: inline-block; /* Affiche les éléments <li> côte à côte */
+    margin-right: 20px; /* Espace entre les éléments */
+}
+.home {
+    text-decoration: none;
+}
+
+li a {
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: rajdhani;
+}
+nav ul a:hover {
+color: var(--yellow-color);
+}
+p {
+    font-size: 20px;
+}
+/* design de la partie footer*/
+    
+footer {
+    padding: 20px; /* Assure qu'il y a de l'espace autour du footer */
+    color: #fff; /* Exemple de couleur du texte */
+}
+footer .text-footer{
+    text-align: center;
+    font-size: 14px;
+}
+footer .social-footer{
+    text-align: center;
+    margin: 50px 0;
+}
+footer .social-item{
+    padding: 15px;
+}
+.hover:hover{
+    
+    filter: brightness(0) saturate(100%) invert(88%) sepia(99%) saturate(2173%) hue-rotate(360deg) brightness(106%) contrast(103%);
+}
+.batman-item:hover {
+    transform: scale(1.1); 
+}
+footer .social-s{
+    text-align: center;
+    margin: 50px 0;
+
+}
+/* design du quiz*//* design du quiz*//* design du quiz*//* design du quiz*//* design du quiz*//* design du quiz*/
+/* style des bordures*/
+#section2 .up-bar2 {
+    border-top: 1px #727272 solid;
+    position: absolute;
+    top: 132px;
+    width: 83%;
+    left: 102px;
+    
+}
+ #section2 .left-bar2 {
+    border-left: 1px #727272 solid;
+    position: absolute;
+    height: 8055%;
+    width: 102px;
+    left: 102px;
+}
+ #section2 .right-bar2 {
+    border-right: 1px #727272 solid;
+    position: absolute;
+    height: 8055%;
+    right: 125px;
+}
+.down-bar2 {
+    border-top: 10px solid #727272;
+    width: 100%;
+    background-color: #ffffff00;
+    margin-top: 20px; /* Ajuste cette valeur en fonction de la hauteur du footer pour éviter le chevauchement */
+}
+/* style du conteneur quiz*/
+#quiz {
+    max-width: 600px;
+    margin: 20px 450px;
+    padding: 20px;
+    background-color: #ffffff00;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#question-number {
+    font-size: 1.2em;
+    color: #fff;
+    text-align: center;
+}
+
+#question {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.option {
+    border: 2px solid #ddd;
+    padding: 10px 50px;
+    margin-bottom: 10px;
+    border-radius: none;
+    background-color: gray;
+}
+
+.option input {
+    margin-right: 10px;
+}
+
+#image-container {
+    margin-top: 20px;
+}
+
+#image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-left: -360px;
+    margin-top: -280px;
+    
+}
+
+/* Assurez-vous que le conteneur du bouton est configuré pour centrer son contenu */
+#quiz button {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement (si nécessaire) */
+    padding: 17px 40px; /* Ajustez l'espace autour du bouton si nécessaire */
+    margin-left: 80px;
+}
+
+/* Styles pour le bouton */
+button {
+    padding: 15px 60px;
+    color: var(--gradient-white); /* Couleur du texte */
+    background: linear-gradient(to right, #404040, #FFA500);
+    border: none;
+    border-radius: none; /* Coins arrondis */
+    cursor: pointer;
+    font-size: 1em;
+    /* Assurez-vous que le bouton est un élément en ligne-bloque pour centrer avec flexbox */
+    display: inline-block; 
+}
+
+#result-container {
+    text-align: center;
+    padding: 20px;
+}
+
+#result-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+#restart-quiz {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#restart-quiz:hover {
+    background-color: #0056b3;
+}

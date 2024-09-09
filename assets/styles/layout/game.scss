@@ -1,0 +1,87 @@
+
+/* design de la partie entete hero*/
+#hero_game {
+    background-image: url(../../Illustrations_game/Batgame_1.png);
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #19587d;
+    background-size: cover;
+    }
+    @keyframes fadeInRigth {
+        0% {
+            opacity: 0;
+            transform: translateX(-1000px) scale(0.1);
+        
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+.content{
+    -webkit-animation: fadeInRigth 1500ms ease-in-out;
+    animation: fadeInRigth 1500ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 140px;
+
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+#hero_game .titre{
+    margin: 20px 0;
+}
+.btn {
+    /* Styles de base pour les boutons */
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: linear gradient(
+        80deg, var(--gradient-white), var(--gradient-red)
+    );
+    color: var(--gradient-white); /* Couleur du texte */
+    font-size: 15px;
+    margin-top: 10px;
+    font-family: rajdhani;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.8s ease, opacity 0.3s ease; /* Transition pour l'effet hover */
+
+    /* Dégradé pour l'arrière-plan */
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 1));
+    opacity: 0.4; /* Opacité initiale */
+}
+
+/* Effet hover */
+.btn:hover {
+    opacity: 1; /* Opacité à 100% au survol */
+}
+
+#hero_game .flèche{
+    display: block;
+    margin: 0 auto;
+    padding-top: 285px;
+}
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 80px;
+    top: 230px;
+}
+.scroll .social{
+    margin-top: 15px;
+}
